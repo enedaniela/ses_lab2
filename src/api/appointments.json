@@ -1,0 +1,940 @@
+[
+{
+    "resourceType": "Bundle",
+    "id": "0bd12c9c-087b-4401-91cb-4d0288f04fd9",
+    "meta": {
+      "lastUpdated": "2020-04-07T07:27:48.827+00:00"
+    },
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "http://hapi.fhir.org/baseR4/Appointment?_format=json&_pretty=true"
+      },
+      {
+        "relation": "next",
+        "url": "http://hapi.fhir.org/baseR4?_getpages=0bd12c9c-087b-4401-91cb-4d0288f04fd9&_getpagesoffset=20&_count=20&_format=json&_pretty=true&_bundletype=searchset"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/1095704",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "1095704",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-04-07T07:19:35.907+00:00",
+            "source": "#aHRCP53dx9x02BJI"
+          },
+          "status": "booked",
+          "start": "2020-03-23T13:30:00+00:00",
+          "end": "2020-03-23T13:30:00+00:00",
+          "participant": [
+            {
+              "actor": {
+                "reference": "Patient/606404"
+              },
+              "status": "accepted"
+            },
+            {
+              "actor": {
+                "reference": "Practitioner/1095071"
+              },
+              "status": "accepted"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/1095703",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "1095703",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-04-07T07:19:35.477+00:00",
+            "source": "#pYYDN5Cd4DZ9IoNN"
+          },
+          "status": "booked",
+          "start": "2020-03-22T11:15:00+00:00",
+          "end": "2020-03-22T11:15:00+00:00",
+          "participant": [
+            {
+              "actor": {
+                "reference": "Patient/606404"
+              },
+              "status": "accepted"
+            },
+            {
+              "actor": {
+                "reference": "Practitioner/1095071"
+              },
+              "status": "accepted"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/1095702",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "1095702",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-04-07T07:19:35.067+00:00",
+            "source": "#JEELFeFhixvt07Vf"
+          },
+          "status": "booked",
+          "start": "2020-03-21T10:30:00+00:00",
+          "end": "2020-03-21T10:30:00+00:00",
+          "participant": [
+            {
+              "actor": {
+                "reference": "Patient/605519"
+              },
+              "status": "accepted"
+            },
+            {
+              "actor": {
+                "reference": "Practitioner/1095071"
+              },
+              "status": "accepted"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/1095701",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "1095701",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-04-07T07:19:34.427+00:00",
+            "source": "#IE250UB9i7IpJFwm"
+          },
+          "status": "booked",
+          "start": "2020-03-20T09:00:00+00:00",
+          "end": "2020-03-20T09:00:00+00:00",
+          "participant": [
+            {
+              "actor": {
+                "reference": "Patient/606624"
+              },
+              "status": "accepted"
+            },
+            {
+              "actor": {
+                "reference": "Practitioner/1095071"
+              },
+              "status": "accepted"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/1094947",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "1094947",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2020-04-06T19:40:24.539+00:00",
+            "source": "#xbsIFaAmW1V9Bwxt"
+          },
+          "language": "CCCCCCC",
+          "status": "proposed",
+          "cancelationReason": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason",
+                "code": "pat",
+                "display": "Patient"
+              }
+            ]
+          },
+          "serviceCategory": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/service-category",
+                  "code": "Aged Care"
+                }
+              ]
+            }
+          ],
+          "serviceType": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/service-type",
+                  "code": "2"
+                }
+              ]
+            }
+          ],
+          "appointmentType": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+                "code": "CHECKUP"
+              }
+            ]
+          },
+          "participant": [
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "DIS"
+                    }
+                  ]
+                }
+              ],
+              "required": "required",
+              "status": "tentative"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/1094833",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "1094833",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2020-04-06T13:17:06.818+00:00",
+            "source": "#QG2RuQaGr5HOi02c"
+          },
+          "language": "CCCCCCC",
+          "status": "proposed",
+          "cancelationReason": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason",
+                "code": "pat",
+                "display": "Patient"
+              }
+            ]
+          },
+          "serviceCategory": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/service-category",
+                  "code": "Aged Care"
+                }
+              ]
+            }
+          ],
+          "serviceType": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/service-type",
+                  "code": "2"
+                }
+              ]
+            }
+          ],
+          "appointmentType": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+                "code": "CHECKUP"
+              }
+            ]
+          },
+          "participant": [
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "DIS"
+                    }
+                  ]
+                }
+              ],
+              "required": "required",
+              "status": "tentative"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/1094831",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "1094831",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2020-04-06T13:13:16.284+00:00",
+            "source": "#mAP2m8b2uSX2Fdhe"
+          },
+          "language": "CCCCCCC",
+          "status": "proposed",
+          "cancelationReason": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason",
+                "code": "pat",
+                "display": "Patient"
+              }
+            ]
+          },
+          "serviceCategory": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/service-category",
+                  "code": "Aged Care"
+                }
+              ]
+            }
+          ],
+          "serviceType": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/service-type",
+                  "code": "2"
+                }
+              ]
+            }
+          ],
+          "appointmentType": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+                "code": "CHECKUP"
+              }
+            ]
+          },
+          "participant": [
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "DIS"
+                    }
+                  ]
+                }
+              ],
+              "required": "required",
+              "status": "tentative"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/1094824",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "1094824",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2020-04-06T12:42:56.805+00:00",
+            "source": "#pDi3Nnhid33WtUyC"
+          },
+          "language": "CCCCCCC",
+          "status": "proposed",
+          "cancelationReason": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason",
+                "code": "pat",
+                "display": "Patient"
+              }
+            ]
+          },
+          "serviceCategory": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/service-category",
+                  "code": "Aged Care"
+                }
+              ]
+            }
+          ],
+          "serviceType": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/service-type",
+                  "code": "2"
+                }
+              ]
+            }
+          ],
+          "appointmentType": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+                "code": "CHECKUP"
+              }
+            ]
+          },
+          "participant": [
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "DIS"
+                    }
+                  ]
+                }
+              ],
+              "required": "required",
+              "status": "tentative"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/1094615",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "1094615",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2020-04-06T06:35:56.567+00:00",
+            "source": "#5S3hkhG4ykLEVr31"
+          },
+          "language": "CCCCCCC",
+          "status": "proposed",
+          "cancelationReason": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason",
+                "code": "pat",
+                "display": "Patient"
+              }
+            ]
+          },
+          "serviceCategory": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/service-category",
+                  "code": "Aged Care"
+                }
+              ]
+            }
+          ],
+          "serviceType": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/service-type",
+                  "code": "2"
+                }
+              ]
+            }
+          ],
+          "appointmentType": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+                "code": "CHECKUP"
+              }
+            ]
+          },
+          "participant": [
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "DIS"
+                    }
+                  ]
+                }
+              ],
+              "required": "required",
+              "status": "tentative"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/1094613",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "1094613",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2020-04-06T06:30:14.997+00:00",
+            "source": "#EOCS3FwhD9IPg3F2"
+          },
+          "language": "CCCCCCC",
+          "status": "proposed",
+          "cancelationReason": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason",
+                "code": "pat",
+                "display": "Patient"
+              }
+            ]
+          },
+          "serviceCategory": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/service-category",
+                  "code": "Aged Care"
+                }
+              ]
+            }
+          ],
+          "serviceType": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/service-type",
+                  "code": "2"
+                }
+              ]
+            }
+          ],
+          "appointmentType": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+                "code": "CHECKUP"
+              }
+            ]
+          },
+          "participant": [
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "DIS"
+                    }
+                  ]
+                }
+              ],
+              "required": "required",
+              "status": "tentative"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/1094273",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "1094273",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-04-04T18:10:27.861+00:00",
+            "source": "#PK6r11OZsJQjDQrD"
+          },
+          "identifier": [
+            {
+              "system": "Demandforce",
+              "value": "92581-prov02"
+            }
+          ],
+          "reasonCode": [
+            {
+              "coding": [
+                {
+                  "system": "Demandforce",
+                  "code": "408005",
+                  "display": "Tooth chattering"
+                }
+              ]
+            }
+          ],
+          "start": "2020-12-10T09:00:00Z",
+          "minutesDuration": 120,
+          "comment": "comment from appointment",
+          "basedOn": [
+            {
+              "type": "ServiceRequest",
+              "identifier": {
+                "system": "Dentrix",
+                "value": "123"
+              }
+            },
+            {
+              "type": "ServiceRequest",
+              "identifier": {
+                "system": "Dentrix",
+                "value": "456"
+              }
+            }
+          ],
+          "participant": [
+            {
+              "actor": {
+                "type": "Patient",
+                "identifier": {
+                  "system": "Dentrix",
+                  "value": "101"
+                }
+              }
+            },
+            {
+              "actor": {
+                "type": "Practitioner",
+                "identifier": {
+                  "system": "Dentrix",
+                  "value": "prov02"
+                }
+              }
+            },
+            {
+              "actor": {
+                "type": "Location",
+                "identifier": {
+                  "system": "Dentrix",
+                  "value": "OP02"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/1093998",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "1093998",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2020-04-03T10:43:12.917+00:00",
+            "source": "#2qydP5O8JXEqqnPS",
+            "tag": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                "code": "SUBSETTED",
+                "display": "Resource encoded in summary mode"
+              }
+            ]
+          },
+          "status": "booked",
+          "start": "2020-03-04",
+          "end": "2020-03-04",
+          "participant": [
+            {
+              "actor": {
+                "reference": "Patient/1093959"
+              },
+              "status": "accepted"
+            },
+            {
+              "actor": {
+                "reference": "Practitioner/1093980"
+              },
+              "status": "accepted"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/1093987",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "1093987",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2020-04-03T10:02:05.937+00:00",
+            "source": "#zlIl83SD8GyPyLhm"
+          },
+          "status": "proposed",
+          "start": "2020-03-15T13:00:00",
+          "end": "2020-03-15T14:00:00",
+          "participant": [
+            {
+              "actor": {
+                "reference": "Patient/1093991"
+              },
+              "status": "needs-action"
+            },
+            {
+              "actor": {
+                "reference": "Practitioner/1093992"
+              },
+              "status": "needs-action"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/1092224",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "1092224",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-31T14:37:37.692+00:00",
+            "source": "#eXQrccevQUQ2hWI9"
+          },
+          "status": "booked",
+          "participant": [
+            {
+              "status": "accepted"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/941617",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "941617",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-26T12:18:43.929+00:00",
+            "source": "#gci3jZDKVU1vj3CO"
+          },
+          "status": "fulfilled",
+          "start": "2014-07-20T05:27:26.321+02:00",
+          "end": "2014-07-20T06:27:26.321+02:00",
+          "created": "2014-07-13T05:27:26+02:00",
+          "participant": [
+            {
+              "actor": {
+                "reference": "Patient/941464"
+              },
+              "status": "accepted"
+            },
+            {
+              "actor": {
+                "reference": "Practitioner/941467"
+              },
+              "status": "accepted"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/941519",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "941519",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-26T12:18:43.929+00:00",
+            "source": "#gci3jZDKVU1vj3CO"
+          },
+          "status": "fulfilled",
+          "start": "2010-08-01T05:27:26.321+02:00",
+          "end": "2010-08-01T06:27:26.321+02:00",
+          "created": "2010-07-25T05:27:26+02:00",
+          "participant": [
+            {
+              "actor": {
+                "reference": "Patient/941464"
+              },
+              "status": "accepted"
+            },
+            {
+              "actor": {
+                "reference": "Practitioner/941467"
+              },
+              "status": "accepted"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/941745",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "941745",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-26T12:18:43.929+00:00",
+            "source": "#gci3jZDKVU1vj3CO"
+          },
+          "status": "fulfilled",
+          "start": "2019-08-18T05:27:26.321+02:00",
+          "end": "2019-08-18T06:27:26.321+02:00",
+          "created": "2019-08-11T05:27:26+02:00",
+          "participant": [
+            {
+              "actor": {
+                "reference": "Patient/941464"
+              },
+              "status": "accepted"
+            },
+            {
+              "actor": {
+                "reference": "Practitioner/941467"
+              },
+              "status": "accepted"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/941489",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "941489",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-26T12:18:43.929+00:00",
+            "source": "#gci3jZDKVU1vj3CO"
+          },
+          "status": "fulfilled",
+          "start": "2004-07-18T05:27:26.321+02:00",
+          "end": "2004-07-18T06:27:26.321+02:00",
+          "created": "2004-07-11T05:27:26+02:00",
+          "participant": [
+            {
+              "actor": {
+                "reference": "Patient/941464"
+              },
+              "status": "accepted"
+            },
+            {
+              "actor": {
+                "reference": "Practitioner/941467"
+              },
+              "status": "accepted"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/941493",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "941493",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-26T12:18:43.929+00:00",
+            "source": "#gci3jZDKVU1vj3CO"
+          },
+          "status": "fulfilled",
+          "start": "2004-07-18T05:27:26.321+02:00",
+          "end": "2004-07-18T06:27:26.321+02:00",
+          "created": "2004-07-11T05:27:26+02:00",
+          "participant": [
+            {
+              "actor": {
+                "reference": "Patient/941464"
+              },
+              "status": "accepted"
+            },
+            {
+              "actor": {
+                "reference": "Practitioner/941474"
+              },
+              "status": "accepted"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/Appointment/941711",
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "941711",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-26T12:18:43.929+00:00",
+            "source": "#gci3jZDKVU1vj3CO"
+          },
+          "status": "fulfilled",
+          "start": "2018-08-12T05:27:26.321+02:00",
+          "end": "2018-08-12T06:27:26.321+02:00",
+          "created": "2018-08-05T05:27:26+02:00",
+          "participant": [
+            {
+              "actor": {
+                "reference": "Patient/941464"
+              },
+              "status": "accepted"
+            },
+            {
+              "actor": {
+                "reference": "Practitioner/941467"
+              },
+              "status": "accepted"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      }
+    ]
+  }
+]

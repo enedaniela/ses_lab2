@@ -1,0 +1,27 @@
+<div class = 'table-responsive'>
+    <table class = 'table' *ngIf='appointments && appointments.length'>
+    <thead>
+        <tr>
+            <th>Appointment Id</th>
+            <th>Patient id</th>
+            <th>Practitioner id</th>
+            <th>Starts at</th>
+            <th>Ends at</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = 'let appointment of appointments'>
+                <td>{{appointment.id}}</td>
+                <td>{{appointment.pacientRef}}</td>
+                <td>{{appointment.practitionerRef}}</td>   
+                <td>{{appointment.start}}</td> 
+                <td>{{appointment.end}}</td>             
+        </tr>
+    </tbody>
+    </table>
+    <div>
+        <label *ngIf = '!appointments.length'>
+        This pacient has no appointments!
+        </label>
+    </div>
+</div>

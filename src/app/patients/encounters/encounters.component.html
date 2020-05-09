@@ -1,0 +1,23 @@
+<div class = 'table-responsive'>
+    <table class = 'table' *ngIf='encounters && encounters.length'>
+    <thead>
+        <tr>
+            <th>Encounter Id</th>
+            <th>Patient reference</th>
+            <th>Start</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = 'let encounter of encounters'>
+                <td>{{encounter.id}}</td>
+                <td>{{encounter.pacientRef}}</td>
+                <td>{{encounter.start}}</td>               
+        </tr>
+    </tbody>
+    </table>
+    <div>
+        <label *ngIf = '!encounters.length'>
+        There are no encounters for this pacient!
+        </label>
+    </div>
+</div>

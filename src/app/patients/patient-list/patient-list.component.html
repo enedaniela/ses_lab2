@@ -1,0 +1,52 @@
+<div class = 'card'>
+    <div class = 'card-header'>
+        {{pageTitle}}
+    </div>
+    <div class = 'card-body'>
+        <div class = 'row'></div>
+        <div class = 'form-group col-xs-2' >  
+            <label>
+                <i class="fa fa-filter"></i>
+                Filter by:
+            </label>
+            <input type = 'text' placeholder = 'Last name' [(ngModel)] = 'filter' />
+
+        </div>
+        <div class = 'table-responsive'>
+            <table class = 'table' *ngIf='filteredPacients && filteredPacients.length'>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone</th>
+                    <th>Gender</th> 
+                    <th>Birth Date</th>
+                    <th></th> 
+                    <th></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = 'let pacient of filteredPacients | paginate: { itemsPerPage: 10, currentPage: p }'>
+                        <td>{{ pacient.id }}</td>
+                        <td>
+                            <a [routerLink] = "['/patients', pacient.id]">
+                            {{ pacient.given }}
+                        </a>
+                        </td>
+                        <td>
+                            <a [routerLink] = "['/patients', pacient.id]">
+                                {{ pacient.family }}
+                            </a>
+                        </td>
+                        <td>{{ pacient.phone }}</td>
+                        <td>{{ pacient.gender }}</td>
+                        <td>{{ pacient.birthDate }}</td>
+                </tr>
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            </tbody>
+            </table>
+        </div>
+    </div>
+</div>

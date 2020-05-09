@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>Edit this patient?</h1>
+<div mat-dialog-content [formGroup] = "form">
+    <input type = 'text' placeholder = 'First Name' formControlName = "firstName" />
+    <input type = 'text' placeholder = 'Last Name' formControlName = "lastName" />
+    <mat-form-field>
+    
+        <mat-select name="gender" [(value)]="selectedGender" placeholder="Gender" formControlName = "gender">
+            <mat-option [value]="'male'">Male</mat-option>
+            <mat-option [value]="'female'">Female</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onClose()">Close</button>
+  <button mat-button (click)="onSave()"cdkFocusInitial>Save</button>
+</div>

@@ -1,0 +1,25 @@
+<div class = 'table-responsive'>
+    <table class = 'table' *ngIf='careplans && careplans.length'>
+    <thead>
+        <tr>
+            <th>CarePlan Id</th>
+            <th>CarePlan name</th>
+            <th>Patient reference</th>
+            <th>Start</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = 'let careplan of careplans'>
+                <td>{{careplan.id}}</td>
+                <td>{{careplan.name}}</td>
+                <td>{{careplan.subjectRef}}</td>
+                <td>{{careplan.start}}</td>               
+        </tr>
+    </tbody>
+    </table>
+    <div>
+        <label *ngIf = '!careplans.length'>
+        There are no careplans for this pacient!
+        </label>
+    </div>
+</div>

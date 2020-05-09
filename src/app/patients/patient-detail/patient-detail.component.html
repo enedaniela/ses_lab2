@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class = 'card' *ngIf = 'currentPacient'>
+    <div class = 'card-header'>
+        <div class = 'row'></div>
+        <div class = 'form-group col-xs-2' > 
+            <label class = "pull-right">{{currentPacient.prefix + ' ' + currentPacient.given + ' ' + currentPacient.family}}</label>
+        <ul class="nav nav-tabs card-header-tabs" role = "tablist">
+            <li class="nav-item">
+              <a class="nav-link"data-toggle="tab" [routerLink]="['encounters']" routerLinkActive="active">Encounters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" [routerLink]="['careplan']" routerLinkActive="active">Care Plan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" [routerLink]="['allergies']" routerLinkActive="active">Allergies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" [routerLink]="['appointments']" routerLinkActive="active">Appointments</a>
+              </li>
+          </ul>
+        </div>
+    </div>
+    <div class="card-body">
+        <router-outlet></router-outlet>
+    <div>
+        <button class = 'btn btn-outline-secondary'
+            (click) = 'onBack()'
+            style="width:80px">
+            <i class= 'fa fa-chevron-left'></i>
+            Back
+        </button>
+    </div>
+</div>
+
+

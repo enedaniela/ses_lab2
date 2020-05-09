@@ -1,0 +1,2275 @@
+[{
+    "resourceType": "Bundle",
+    "id": "e6e401a3-73fc-4c6b-b09f-ed03cb337796",
+    "meta": {
+      "lastUpdated": "2020-04-07T08:00:30.212+00:00"
+    },
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "http://hapi.fhir.org/baseR4/CarePlan?_format=json&_pretty=true"
+      },
+      {
+        "relation": "next",
+        "url": "http://hapi.fhir.org/baseR4?_getpages=e6e401a3-73fc-4c6b-b09f-ed03cb337796&_getpagesoffset=20&_count=20&_format=json&_pretty=true&_bundletype=searchset"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/1095404",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "1095404",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-04-07T06:07:56.031+00:00",
+            "source": "#86vzZlWe2Hw1odg4"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Diabetes self management plan.<br/>Activities: <ul><li>Diabetes self management plan</li><li>Diabetes self management plan</li></ul><br/>Care plan is meant to treat Prediabetes.</div>"
+          },
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "698360004",
+                  "display": "Diabetes self management plan"
+                }
+              ],
+              "text": "Diabetes self management plan"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/1095380"
+          },
+          "encounter": {
+            "reference": "Encounter/1095395"
+          },
+          "period": {
+            "start": "1987-12-21T06:22:41-05:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/1095398"
+            }
+          ],
+          "addresses": [
+            {
+              "reference": "Condition/1095396"
+            }
+          ],
+          "goal": [
+            {
+              "reference": "Goal/1095399"
+            },
+            {
+              "reference": "Goal/1095400"
+            },
+            {
+              "reference": "Goal/1095401"
+            },
+            {
+              "reference": "Goal/1095402"
+            },
+            {
+              "reference": "Goal/1095403"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "160670007",
+                      "display": "Diabetic diet"
+                    }
+                  ],
+                  "text": "Diabetic diet"
+                },
+                "status": "in-progress",
+                "location": {
+                  "display": "PCP116891"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "229065009",
+                      "display": "Exercise therapy"
+                    }
+                  ],
+                  "text": "Exercise therapy"
+                },
+                "status": "in-progress",
+                "location": {
+                  "display": "PCP116891"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/1095608",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "1095608",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-04-07T06:07:56.031+00:00",
+            "source": "#86vzZlWe2Hw1odg4"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Fracture care.<br/>Activities: <ul><li>Fracture care</li><li>Fracture care</li></ul><br/>Care plan is meant to treat Fracture of clavicle.</div>"
+          },
+          "status": "completed",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "385691007",
+                  "display": "Fracture care"
+                }
+              ],
+              "text": "Fracture care"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/1095380"
+          },
+          "encounter": {
+            "reference": "Encounter/1095599"
+          },
+          "period": {
+            "start": "2016-05-21T07:22:41-04:00",
+            "end": "2016-06-20T07:22:41-04:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/1095607"
+            }
+          ],
+          "addresses": [
+            {
+              "reference": "Condition/1095600"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "183051005",
+                      "display": "Recommendation to rest"
+                    }
+                  ],
+                  "text": "Recommendation to rest"
+                },
+                "status": "completed",
+                "location": {
+                  "display": "MORTON HOSPITAL"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "408580007",
+                      "display": "Physical activity target light exercise"
+                    }
+                  ],
+                  "text": "Physical activity target light exercise"
+                },
+                "status": "completed",
+                "location": {
+                  "display": "MORTON HOSPITAL"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/1095085",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "1095085",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-04-07T06:06:10.304+00:00",
+            "source": "#InzWfFlK3uLef4KE"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Diabetes self management plan.<br/>Activities: <ul><li>Diabetes self management plan</li><li>Diabetes self management plan</li></ul><br/>Care plan is meant to treat Prediabetes.</div>"
+          },
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "698360004",
+                  "display": "Diabetes self management plan"
+                }
+              ],
+              "text": "Diabetes self management plan"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/1095061"
+          },
+          "encounter": {
+            "reference": "Encounter/1095076"
+          },
+          "period": {
+            "start": "1987-12-21T06:22:41-05:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/1095079"
+            }
+          ],
+          "addresses": [
+            {
+              "reference": "Condition/1095077"
+            }
+          ],
+          "goal": [
+            {
+              "reference": "Goal/1095080"
+            },
+            {
+              "reference": "Goal/1095081"
+            },
+            {
+              "reference": "Goal/1095082"
+            },
+            {
+              "reference": "Goal/1095083"
+            },
+            {
+              "reference": "Goal/1095084"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "160670007",
+                      "display": "Diabetic diet"
+                    }
+                  ],
+                  "text": "Diabetic diet"
+                },
+                "status": "in-progress",
+                "location": {
+                  "display": "PCP116891"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "229065009",
+                      "display": "Exercise therapy"
+                    }
+                  ],
+                  "text": "Exercise therapy"
+                },
+                "status": "in-progress",
+                "location": {
+                  "display": "PCP116891"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/1095289",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "1095289",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-04-07T06:06:10.304+00:00",
+            "source": "#InzWfFlK3uLef4KE"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Fracture care.<br/>Activities: <ul><li>Fracture care</li><li>Fracture care</li></ul><br/>Care plan is meant to treat Fracture of clavicle.</div>"
+          },
+          "status": "completed",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "385691007",
+                  "display": "Fracture care"
+                }
+              ],
+              "text": "Fracture care"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/1095061"
+          },
+          "encounter": {
+            "reference": "Encounter/1095280"
+          },
+          "period": {
+            "start": "2016-05-21T07:22:41-04:00",
+            "end": "2016-06-20T07:22:41-04:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/1095288"
+            }
+          ],
+          "addresses": [
+            {
+              "reference": "Condition/1095281"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "183051005",
+                      "display": "Recommendation to rest"
+                    }
+                  ],
+                  "text": "Recommendation to rest"
+                },
+                "status": "completed",
+                "location": {
+                  "display": "MORTON HOSPITAL"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "408580007",
+                      "display": "Physical activity target light exercise"
+                    }
+                  ],
+                  "text": "Physical activity target light exercise"
+                },
+                "status": "completed",
+                "location": {
+                  "display": "MORTON HOSPITAL"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/945845",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "945845",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-26T12:29:47.762+00:00",
+            "source": "#eASqVAjKoAwCtCop"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Respiratory therapy.<br/>Activities: <ul><li>Respiratory therapy</li><li>Respiratory therapy</li></ul><br/>Care plan is meant to treat Acute bronchitis (disorder).</div>"
+          },
+          "status": "completed",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "53950000",
+                  "display": "Respiratory therapy"
+                }
+              ],
+              "text": "Respiratory therapy"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/945807"
+          },
+          "encounter": {
+            "reference": "Encounter/945838"
+          },
+          "period": {
+            "start": "2015-12-23T14:13:47+01:00",
+            "end": "2015-12-30T14:13:47+01:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/945844"
+            }
+          ],
+          "addresses": [
+            {
+              "reference": "Condition/945839"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "304510005",
+                      "display": "Recommendation to avoid exercise"
+                    }
+                  ],
+                  "text": "Recommendation to avoid exercise"
+                },
+                "status": "completed",
+                "location": {
+                  "display": "NEWTON-WELLESLEY HOSPITAL"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "371605008",
+                      "display": "Deep breathing and coughing exercises"
+                    }
+                  ],
+                  "text": "Deep breathing and coughing exercises"
+                },
+                "status": "completed",
+                "location": {
+                  "display": "NEWTON-WELLESLEY HOSPITAL"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/945830",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "945830",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-26T12:29:47.762+00:00",
+            "source": "#eASqVAjKoAwCtCop"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Wound care.<br/>Activities: <ul><li>Wound care</li><li>Wound care</li></ul><br/>Care plan is meant to treat Laceration of foot.</div>"
+          },
+          "status": "completed",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "225358003",
+                  "display": "Wound care"
+                }
+              ],
+              "text": "Wound care"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/945807"
+          },
+          "encounter": {
+            "reference": "Encounter/945823"
+          },
+          "period": {
+            "start": "2015-03-10T14:13:47+01:00",
+            "end": "2015-03-24T14:13:47+01:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/945829"
+            }
+          ],
+          "addresses": [
+            {
+              "reference": "Condition/945824"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "385949008",
+                      "display": "Dressing change management"
+                    }
+                  ],
+                  "text": "Dressing change management"
+                },
+                "status": "completed",
+                "location": {
+                  "display": "NEWTON-WELLESLEY HOSPITAL"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "439830001",
+                      "display": "Behavior to prevent infection"
+                    }
+                  ],
+                  "text": "Behavior to prevent infection"
+                },
+                "status": "completed",
+                "location": {
+                  "display": "NEWTON-WELLESLEY HOSPITAL"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/942678",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "942678",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-26T12:21:01.608+00:00",
+            "source": "#QsXwrWuhlj04u4R9"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Respiratory therapy.<br/>Activities: <ul><li>Respiratory therapy</li><li>Respiratory therapy</li></ul><br/>Care plan is meant to treat Acute bronchitis (disorder).</div>"
+          },
+          "status": "completed",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "53950000",
+                  "display": "Respiratory therapy"
+                }
+              ],
+              "text": "Respiratory therapy"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/942543"
+          },
+          "encounter": {
+            "reference": "Encounter/942672"
+          },
+          "period": {
+            "start": "2013-07-11T00:40:27+02:00",
+            "end": "2013-07-25T00:40:27+02:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/942677"
+            }
+          ],
+          "addresses": [
+            {
+              "reference": "Condition/942673"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "304510005",
+                      "display": "Recommendation to avoid exercise"
+                    }
+                  ],
+                  "text": "Recommendation to avoid exercise"
+                },
+                "status": "completed",
+                "location": {
+                  "display": "BAYSTATE MEDICAL CENTER"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "371605008",
+                      "display": "Deep breathing and coughing exercises"
+                    }
+                  ],
+                  "text": "Deep breathing and coughing exercises"
+                },
+                "status": "completed",
+                "location": {
+                  "display": "BAYSTATE MEDICAL CENTER"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/941531",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "941531",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-26T12:18:43.929+00:00",
+            "source": "#gci3jZDKVU1vj3CO"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Physical therapy procedure.<br/>Activities: <ul><li>Physical therapy procedure</li><li>Physical therapy procedure</li></ul><br/>Care plan is meant to treat Sprain of ankle.</div>"
+          },
+          "status": "completed",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "91251008",
+                  "display": "Physical therapy procedure"
+                }
+              ],
+              "text": "Physical therapy procedure"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/941464"
+          },
+          "encounter": {
+            "reference": "Encounter/941525"
+          },
+          "period": {
+            "start": "2012-03-01T04:27:26+01:00",
+            "end": "2012-03-22T04:27:26+01:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/941530"
+            }
+          ],
+          "addresses": [
+            {
+              "reference": "Condition/941526"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "229586001",
+                      "display": "Rest, ice, compression and elevation treatment programme"
+                    }
+                  ],
+                  "text": "Rest, ice, compression and elevation treatment programme"
+                },
+                "status": "completed",
+                "location": {
+                  "display": "MILFORD REGIONAL MEDICAL CENTER"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "229070002",
+                      "display": "Stretching exercises"
+                    }
+                  ],
+                  "text": "Stretching exercises"
+                },
+                "status": "completed",
+                "location": {
+                  "display": "MILFORD REGIONAL MEDICAL CENTER"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/941484",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "941484",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-26T12:18:43.929+00:00",
+            "source": "#gci3jZDKVU1vj3CO"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Diabetes self management plan.<br/>Activities: <ul><li>Diabetes self management plan</li><li>Diabetes self management plan</li></ul><br/>Care plan is meant to treat Prediabetes.</div>"
+          },
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "698360004",
+                  "display": "Diabetes self management plan"
+                }
+              ],
+              "text": "Diabetes self management plan"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/941464"
+          },
+          "encounter": {
+            "reference": "Encounter/941475"
+          },
+          "period": {
+            "start": "2003-03-16T04:27:26+01:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/941478"
+            }
+          ],
+          "addresses": [
+            {
+              "reference": "Condition/941476"
+            }
+          ],
+          "goal": [
+            {
+              "reference": "Goal/941479"
+            },
+            {
+              "reference": "Goal/941480"
+            },
+            {
+              "reference": "Goal/941481"
+            },
+            {
+              "reference": "Goal/941482"
+            },
+            {
+              "reference": "Goal/941483"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "160670007",
+                      "display": "Diabetic diet"
+                    }
+                  ],
+                  "text": "Diabetic diet"
+                },
+                "status": "in-progress",
+                "location": {
+                  "display": "MILFORD REGIONAL MEDICAL CENTER"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "229065009",
+                      "display": "Exercise therapy"
+                    }
+                  ],
+                  "text": "Exercise therapy"
+                },
+                "status": "in-progress",
+                "location": {
+                  "display": "MILFORD REGIONAL MEDICAL CENTER"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/5f1e89b6-b1e9-46e6-bdb4-ea222b2d35e5",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "5f1e89b6-b1e9-46e6-bdb4-ea222b2d35e5",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-25T00:35:06.465+00:00",
+            "source": "#uSBd4kmc4s9RNG5W",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+            ],
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "Covid19 synthetic population from Synthea"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Inpatient care plan (record artifact).<br/>Activities: <ul><li>Inpatient care plan (record artifact)</li><li>Inpatient care plan (record artifact)</li></ul></div>"
+          },
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                  "code": "assess-plan"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "736353004",
+                  "display": "Inpatient care plan (record artifact)"
+                }
+              ],
+              "text": "Inpatient care plan (record artifact)"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/d817f4f6-9efd-4ef5-9306-a6264a19c34a"
+          },
+          "encounter": {
+            "reference": "Encounter/5c4cbcb5-694a-4613-b799-885a19fbf073"
+          },
+          "period": {
+            "start": "2017-08-15T23:37:56-05:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/6ec5af3b-9379-4170-b00a-fbd619d0781b"
+            }
+          ],
+          "goal": [
+            {
+              "reference": "Goal/81d214fa-1099-4144-a418-77f4d25294be"
+            },
+            {
+              "reference": "Goal/8455f474-3764-4b41-8553-7b6df21dc560"
+            },
+            {
+              "reference": "Goal/b9689fdf-1075-406b-b87e-8488c2289352"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "385715006",
+                      "display": "Cardiac care (regime/therapy)"
+                    }
+                  ],
+                  "text": "Cardiac care (regime/therapy)"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/dbad132b-5f0f-47ce-9e98-d15b8a26d8cc",
+                  "display": "SANTA MONICA - UCLA MED CTR & ORTHOPAEDIC HOSPITAL"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "386619000",
+                      "display": "Low sodium diet (finding)"
+                    }
+                  ],
+                  "text": "Low sodium diet (finding)"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/dbad132b-5f0f-47ce-9e98-d15b8a26d8cc",
+                  "display": "SANTA MONICA - UCLA MED CTR & ORTHOPAEDIC HOSPITAL"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/b24d0290-ebf7-49f0-814f-13486c6a02ec",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "b24d0290-ebf7-49f0-814f-13486c6a02ec",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-25T00:35:06.465+00:00",
+            "source": "#uSBd4kmc4s9RNG5W",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+            ],
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "Covid19 synthetic population from Synthea"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Heart failure self management plan.<br/>Activities: <ul><li>Heart failure self management plan</li><li>Heart failure self management plan</li><li>Heart failure self management plan</li><li>Heart failure self management plan</li></ul><br/>Care plan is meant to treat Chronic congestive heart failure (disorder).</div>"
+          },
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                  "code": "assess-plan"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "735984001",
+                  "display": "Heart failure self management plan"
+                }
+              ],
+              "text": "Heart failure self management plan"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/d817f4f6-9efd-4ef5-9306-a6264a19c34a"
+          },
+          "encounter": {
+            "reference": "Encounter/1cfcfd44-72f5-47f1-bf2a-0bc9a0050004"
+          },
+          "period": {
+            "start": "2017-02-16T22:37:56-06:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/22035877-f6b2-4d4b-93dc-e4b08fb95b1e"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "183063000",
+                      "display": "low salt diet education"
+                    }
+                  ],
+                  "text": "low salt diet education"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/03e1e090-81bf-4eb4-9cff-7eda3c7a323e",
+                  "display": "PROVIDENCE SAINT JOHN'S HEALTH CENTER"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "183301007",
+                      "display": "physical exercise"
+                    }
+                  ],
+                  "text": "physical exercise"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/03e1e090-81bf-4eb4-9cff-7eda3c7a323e",
+                  "display": "PROVIDENCE SAINT JOHN'S HEALTH CENTER"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "372700007",
+                      "display": "Nitrate-based vasodilating agent"
+                    }
+                  ],
+                  "text": "Nitrate-based vasodilating agent"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/03e1e090-81bf-4eb4-9cff-7eda3c7a323e",
+                  "display": "PROVIDENCE SAINT JOHN'S HEALTH CENTER"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "372691009",
+                      "display": "Loop diuretic (substance)"
+                    }
+                  ],
+                  "text": "Loop diuretic (substance)"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/03e1e090-81bf-4eb4-9cff-7eda3c7a323e",
+                  "display": "PROVIDENCE SAINT JOHN'S HEALTH CENTER"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/cda69973-0ccf-4c22-9cd6-298cee45a832",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "cda69973-0ccf-4c22-9cd6-298cee45a832",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-25T00:34:44.613+00:00",
+            "source": "#HV7eQmBq9iZau1iu",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+            ],
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "Covid19 synthetic population from Synthea"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Inpatient care plan (record artifact).<br/>Activities: <ul><li>Inpatient care plan (record artifact)</li><li>Inpatient care plan (record artifact)</li></ul></div>"
+          },
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                  "code": "assess-plan"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "736353004",
+                  "display": "Inpatient care plan (record artifact)"
+                }
+              ],
+              "text": "Inpatient care plan (record artifact)"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/1c445b7a-e5bb-43ec-b96e-7e15dd6e2927"
+          },
+          "encounter": {
+            "reference": "Encounter/0f21182f-4344-4097-8e94-ae2ec65fd9e9"
+          },
+          "period": {
+            "start": "2013-03-13T10:14:02-05:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/0e2d941a-4d5a-4350-a40b-24f41c944a86"
+            }
+          ],
+          "goal": [
+            {
+              "reference": "Goal/2c34f823-2eee-44f9-84f6-85731d654a0c"
+            },
+            {
+              "reference": "Goal/fe7b6a06-0510-4c8c-80ef-d1fc9301a249"
+            },
+            {
+              "reference": "Goal/7c469bef-863e-4970-a69a-861d9a7c9b66"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "385715006",
+                      "display": "Cardiac care (regime/therapy)"
+                    }
+                  ],
+                  "text": "Cardiac care (regime/therapy)"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/c71b5d76-e0bd-4896-ab18-e881f0320c52",
+                  "display": "USC VERDUGO HILLS HOSPITAL"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "386619000",
+                      "display": "Low sodium diet (finding)"
+                    }
+                  ],
+                  "text": "Low sodium diet (finding)"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/c71b5d76-e0bd-4896-ab18-e881f0320c52",
+                  "display": "USC VERDUGO HILLS HOSPITAL"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/c00740c6-cebd-4c59-aa94-2e514862bfd7",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "c00740c6-cebd-4c59-aa94-2e514862bfd7",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-25T00:34:44.613+00:00",
+            "source": "#HV7eQmBq9iZau1iu",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+            ],
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "Covid19 synthetic population from Synthea"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Heart failure self management plan.<br/>Activities: <ul><li>Heart failure self management plan</li><li>Heart failure self management plan</li><li>Heart failure self management plan</li><li>Heart failure self management plan</li></ul><br/>Care plan is meant to treat Chronic congestive heart failure (disorder).</div>"
+          },
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                  "code": "assess-plan"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "735984001",
+                  "display": "Heart failure self management plan"
+                }
+              ],
+              "text": "Heart failure self management plan"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/1c445b7a-e5bb-43ec-b96e-7e15dd6e2927"
+          },
+          "encounter": {
+            "reference": "Encounter/eb3adc3b-e734-4d4e-8956-30be7200e7a1"
+          },
+          "period": {
+            "start": "2012-09-14T10:14:02-05:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/c18cc3a1-6c49-42df-8ba7-4f96d971cbf6"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "183063000",
+                      "display": "low salt diet education"
+                    }
+                  ],
+                  "text": "low salt diet education"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/56db1666-6c0e-4604-88e6-af09f961b540",
+                  "display": "GLENDALE MEM HOSPITAL & HLTH CENTER"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "183301007",
+                      "display": "physical exercise"
+                    }
+                  ],
+                  "text": "physical exercise"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/56db1666-6c0e-4604-88e6-af09f961b540",
+                  "display": "GLENDALE MEM HOSPITAL & HLTH CENTER"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "372700007",
+                      "display": "Nitrate-based vasodilating agent"
+                    }
+                  ],
+                  "text": "Nitrate-based vasodilating agent"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/56db1666-6c0e-4604-88e6-af09f961b540",
+                  "display": "GLENDALE MEM HOSPITAL & HLTH CENTER"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "372691009",
+                      "display": "Loop diuretic (substance)"
+                    }
+                  ],
+                  "text": "Loop diuretic (substance)"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/56db1666-6c0e-4604-88e6-af09f961b540",
+                  "display": "GLENDALE MEM HOSPITAL & HLTH CENTER"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/4387b34b-4e65-43be-9e81-c814f4fef0c1",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "4387b34b-4e65-43be-9e81-c814f4fef0c1",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-25T00:34:02.270+00:00",
+            "source": "#2yS9eYiwy5lY3BRV",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+            ],
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "Covid19 synthetic population from Synthea"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Inpatient care plan (record artifact).<br/>Activities: <ul><li>Inpatient care plan (record artifact)</li><li>Inpatient care plan (record artifact)</li></ul></div>"
+          },
+          "status": "completed",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                  "code": "assess-plan"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "736353004",
+                  "display": "Inpatient care plan (record artifact)"
+                }
+              ],
+              "text": "Inpatient care plan (record artifact)"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/c4a618b3-c87b-4989-bb9e-4eb85fb0f2be"
+          },
+          "encounter": {
+            "reference": "Encounter/4999dc17-676d-40c8-9208-9dd46e6b8842"
+          },
+          "period": {
+            "start": "2016-06-07T19:07:46-05:00",
+            "end": "2016-06-08T19:07:46-05:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/751b3f0b-1eae-4b15-8b16-82fc86ee674c"
+            }
+          ],
+          "goal": [
+            {
+              "reference": "Goal/f8ea60f0-0f4e-4993-9601-0b06431d40e3"
+            },
+            {
+              "reference": "Goal/e6b29620-08fd-4457-bc22-92193a4b72b3"
+            },
+            {
+              "reference": "Goal/706227f2-06ff-4264-93cc-f32ace02a2cd"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "385715006",
+                      "display": "Cardiac care (regime/therapy)"
+                    }
+                  ],
+                  "text": "Cardiac care (regime/therapy)"
+                },
+                "status": "completed",
+                "location": {
+                  "reference": "Location/9a30bbc2-ab3d-4700-8912-e7605994056d",
+                  "display": "GLENDALE ADVENTIST MEDICAL CENTER"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "386619000",
+                      "display": "Low sodium diet (finding)"
+                    }
+                  ],
+                  "text": "Low sodium diet (finding)"
+                },
+                "status": "completed",
+                "location": {
+                  "reference": "Location/9a30bbc2-ab3d-4700-8912-e7605994056d",
+                  "display": "GLENDALE ADVENTIST MEDICAL CENTER"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/4c04f85c-c49e-4f3f-98af-e814dba90743",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "4c04f85c-c49e-4f3f-98af-e814dba90743",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-25T00:34:02.270+00:00",
+            "source": "#2yS9eYiwy5lY3BRV",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+            ],
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "Covid19 synthetic population from Synthea"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Inpatient care plan (record artifact).<br/>Activities: <ul><li>Inpatient care plan (record artifact)</li><li>Inpatient care plan (record artifact)</li></ul></div>"
+          },
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                  "code": "assess-plan"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "736353004",
+                  "display": "Inpatient care plan (record artifact)"
+                }
+              ],
+              "text": "Inpatient care plan (record artifact)"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/c4a618b3-c87b-4989-bb9e-4eb85fb0f2be"
+          },
+          "encounter": {
+            "reference": "Encounter/e04bfd33-e96e-4134-a869-7c1d4e807af9"
+          },
+          "period": {
+            "start": "2016-12-05T18:07:46-06:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/9a817984-60ef-4ef7-8b05-61a4ac7eff97"
+            }
+          ],
+          "goal": [
+            {
+              "reference": "Goal/328983da-19f8-4bc4-94c0-87a33928ce99"
+            },
+            {
+              "reference": "Goal/8aefdaff-cf33-4ec5-b617-5bc53e560bf9"
+            },
+            {
+              "reference": "Goal/a8c0bb2c-c045-4058-be06-6e6c33d3e45c"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "385715006",
+                      "display": "Cardiac care (regime/therapy)"
+                    }
+                  ],
+                  "text": "Cardiac care (regime/therapy)"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/9a30bbc2-ab3d-4700-8912-e7605994056d",
+                  "display": "GLENDALE ADVENTIST MEDICAL CENTER"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "386619000",
+                      "display": "Low sodium diet (finding)"
+                    }
+                  ],
+                  "text": "Low sodium diet (finding)"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/9a30bbc2-ab3d-4700-8912-e7605994056d",
+                  "display": "GLENDALE ADVENTIST MEDICAL CENTER"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/9c15c790-5cc9-462b-8f76-45a69e2c8286",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "9c15c790-5cc9-462b-8f76-45a69e2c8286",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-25T00:34:02.270+00:00",
+            "source": "#2yS9eYiwy5lY3BRV",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+            ],
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "Covid19 synthetic population from Synthea"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Heart failure self management plan.<br/>Activities: <ul><li>Heart failure self management plan</li><li>Heart failure self management plan</li><li>Heart failure self management plan</li><li>Heart failure self management plan</li></ul><br/>Care plan is meant to treat Chronic congestive heart failure (disorder).</div>"
+          },
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                  "code": "assess-plan"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "735984001",
+                  "display": "Heart failure self management plan"
+                }
+              ],
+              "text": "Heart failure self management plan"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/c4a618b3-c87b-4989-bb9e-4eb85fb0f2be"
+          },
+          "encounter": {
+            "reference": "Encounter/d57d7020-0e37-4d86-a784-a324cc527bfb"
+          },
+          "period": {
+            "start": "2015-12-10T18:07:46-06:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/b60add37-cc69-4aca-bf77-a59b003ee2c9"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "183063000",
+                      "display": "low salt diet education"
+                    }
+                  ],
+                  "text": "low salt diet education"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/44a057e7-655b-46ce-a530-b3687d710fcf",
+                  "display": "GLENDALE MEM HOSPITAL & HLTH CENTER"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "183301007",
+                      "display": "physical exercise"
+                    }
+                  ],
+                  "text": "physical exercise"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/44a057e7-655b-46ce-a530-b3687d710fcf",
+                  "display": "GLENDALE MEM HOSPITAL & HLTH CENTER"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "372700007",
+                      "display": "Nitrate-based vasodilating agent"
+                    }
+                  ],
+                  "text": "Nitrate-based vasodilating agent"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/44a057e7-655b-46ce-a530-b3687d710fcf",
+                  "display": "GLENDALE MEM HOSPITAL & HLTH CENTER"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "372691009",
+                      "display": "Loop diuretic (substance)"
+                    }
+                  ],
+                  "text": "Loop diuretic (substance)"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/44a057e7-655b-46ce-a530-b3687d710fcf",
+                  "display": "GLENDALE MEM HOSPITAL & HLTH CENTER"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/a3186290-f5d1-451a-8161-eee1a3139d4a",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "a3186290-f5d1-451a-8161-eee1a3139d4a",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-25T00:33:47.824+00:00",
+            "source": "#jI67puWekwuoz9x2",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+            ],
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "Covid19 synthetic population from Synthea"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Infectious disease care plan (record artifact).<br/>Activities: <ul><li>Infectious disease care plan (record artifact)</li><li>Infectious disease care plan (record artifact)</li><li>Infectious disease care plan (record artifact)</li></ul><br/>Care plan is meant to treat Suspected COVID-19.</div>"
+          },
+          "status": "completed",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                  "code": "assess-plan"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "736376001",
+                  "display": "Infectious disease care plan (record artifact)"
+                }
+              ],
+              "text": "Infectious disease care plan (record artifact)"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/a941ba13-e44a-4c82-836c-bf053412a16c"
+          },
+          "encounter": {
+            "reference": "Encounter/d67ddcc3-744a-43d5-a677-6e3f0a7e2760"
+          },
+          "period": {
+            "start": "2020-03-15T09:50:17-05:00",
+            "end": "2020-03-15T10:34:17-05:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/7fd8eee4-5f84-4904-b749-085aa7aac84f"
+            }
+          ],
+          "addresses": [
+            {
+              "reference": "Condition/425efe86-86a1-4d11-ba31-3aee6c6aecdf"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "444908001",
+                      "display": "Isolation nursing in negative pressure isolation environment (regime/therapy)"
+                    }
+                  ],
+                  "text": "Isolation nursing in negative pressure isolation environment (regime/therapy)"
+                },
+                "status": "completed",
+                "location": {
+                  "reference": "Location/e86a743a-b54d-4604-9521-80c1d8bf86b6",
+                  "display": "EVANSTON HOSPITAL"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "409524006",
+                      "display": "Airborne precautions (procedure)"
+                    }
+                  ],
+                  "text": "Airborne precautions (procedure)"
+                },
+                "status": "completed",
+                "location": {
+                  "reference": "Location/e86a743a-b54d-4604-9521-80c1d8bf86b6",
+                  "display": "EVANSTON HOSPITAL"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "409526008",
+                      "display": "Personal protective equipment (physical object)"
+                    }
+                  ],
+                  "text": "Personal protective equipment (physical object)"
+                },
+                "status": "completed",
+                "location": {
+                  "reference": "Location/e86a743a-b54d-4604-9521-80c1d8bf86b6",
+                  "display": "EVANSTON HOSPITAL"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/d9c44642-c205-4859-8cdd-c851bd62ae59",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "d9c44642-c205-4859-8cdd-c851bd62ae59",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-25T00:33:47.824+00:00",
+            "source": "#jI67puWekwuoz9x2",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+            ],
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "Covid19 synthetic population from Synthea"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Infectious disease care plan (record artifact).<br/>Activities: <ul><li>Infectious disease care plan (record artifact)</li><li>Infectious disease care plan (record artifact)</li></ul><br/>Care plan is meant to treat COVID-19.</div>"
+          },
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                  "code": "assess-plan"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "736376001",
+                  "display": "Infectious disease care plan (record artifact)"
+                }
+              ],
+              "text": "Infectious disease care plan (record artifact)"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/a941ba13-e44a-4c82-836c-bf053412a16c"
+          },
+          "encounter": {
+            "reference": "Encounter/d67ddcc3-744a-43d5-a677-6e3f0a7e2760"
+          },
+          "period": {
+            "start": "2020-03-15T10:34:17-05:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/5035ec92-1b6e-41ad-b8ef-e165c76d0989"
+            }
+          ],
+          "addresses": [
+            {
+              "reference": "Condition/98a5c5bb-c151-4896-878a-a5218036eeed"
+            }
+          ],
+          "goal": [
+            {
+              "reference": "Goal/b532a6eb-9625-47c8-9b43-f8a637f90bf2"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "409524006",
+                      "display": "Airborne precautions (procedure)"
+                    }
+                  ],
+                  "text": "Airborne precautions (procedure)"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/e86a743a-b54d-4604-9521-80c1d8bf86b6",
+                  "display": "EVANSTON HOSPITAL"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "361235007",
+                      "display": "Isolation of infected patient (procedure)"
+                    }
+                  ],
+                  "text": "Isolation of infected patient (procedure)"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/e86a743a-b54d-4604-9521-80c1d8bf86b6",
+                  "display": "EVANSTON HOSPITAL"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/0b19efd8-d246-49d1-b722-59f861c319a5",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "0b19efd8-d246-49d1-b722-59f861c319a5",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-25T00:33:17.011+00:00",
+            "source": "#nb24dOpofx5EsGoK",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+            ],
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "Covid19 synthetic population from Synthea"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Inpatient care plan (record artifact).<br/>Activities: <ul><li>Inpatient care plan (record artifact)</li><li>Inpatient care plan (record artifact)</li></ul></div>"
+          },
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                  "code": "assess-plan"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "736353004",
+                  "display": "Inpatient care plan (record artifact)"
+                }
+              ],
+              "text": "Inpatient care plan (record artifact)"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/da224c58-0fa6-49f7-b8f7-bbee6432aa95"
+          },
+          "encounter": {
+            "reference": "Encounter/bf1af18d-13a4-4405-bccf-2a6241d83127"
+          },
+          "period": {
+            "start": "2016-02-25T23:47:58-06:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/ae04d4f6-b802-4b5c-b277-220009ffe3c9"
+            }
+          ],
+          "goal": [
+            {
+              "reference": "Goal/87170431-b92e-463d-a088-957d54135719"
+            },
+            {
+              "reference": "Goal/5162fe2e-c792-4296-918a-9919e1d974d0"
+            },
+            {
+              "reference": "Goal/6e2060e1-84e7-4fd1-b8d4-7f24daa4415d"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "385715006",
+                      "display": "Cardiac care (regime/therapy)"
+                    }
+                  ],
+                  "text": "Cardiac care (regime/therapy)"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/34649cce-7cff-415c-ba39-14b7d4ab8c8b",
+                  "display": "COMMUNITY HOSPITAL OF HUNTINGTON PARK"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "386619000",
+                      "display": "Low sodium diet (finding)"
+                    }
+                  ],
+                  "text": "Low sodium diet (finding)"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/34649cce-7cff-415c-ba39-14b7d4ab8c8b",
+                  "display": "COMMUNITY HOSPITAL OF HUNTINGTON PARK"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "http://hapi.fhir.org/baseR4/CarePlan/d17cacfa-9b45-4a2a-b609-6b0e5e97a0fb",
+        "resource": {
+          "resourceType": "CarePlan",
+          "id": "d17cacfa-9b45-4a2a-b609-6b0e5e97a0fb",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-03-25T00:33:17.011+00:00",
+            "source": "#nb24dOpofx5EsGoK",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+            ],
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "Covid19 synthetic population from Synthea"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Heart failure self management plan.<br/>Activities: <ul><li>Heart failure self management plan</li><li>Heart failure self management plan</li><li>Heart failure self management plan</li><li>Heart failure self management plan</li></ul><br/>Care plan is meant to treat Chronic congestive heart failure (disorder).</div>"
+          },
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                  "code": "assess-plan"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "735984001",
+                  "display": "Heart failure self management plan"
+                }
+              ],
+              "text": "Heart failure self management plan"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/da224c58-0fa6-49f7-b8f7-bbee6432aa95"
+          },
+          "encounter": {
+            "reference": "Encounter/4646ee0c-4a5d-46ba-82d1-16f33904ae88"
+          },
+          "period": {
+            "start": "2015-08-30T00:47:58-05:00"
+          },
+          "careTeam": [
+            {
+              "reference": "CareTeam/cc6f9e75-1205-407a-a2ca-b702ef78f200"
+            }
+          ],
+          "activity": [
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "183063000",
+                      "display": "low salt diet education"
+                    }
+                  ],
+                  "text": "low salt diet education"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/34649cce-7cff-415c-ba39-14b7d4ab8c8b",
+                  "display": "COMMUNITY HOSPITAL OF HUNTINGTON PARK"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "183301007",
+                      "display": "physical exercise"
+                    }
+                  ],
+                  "text": "physical exercise"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/34649cce-7cff-415c-ba39-14b7d4ab8c8b",
+                  "display": "COMMUNITY HOSPITAL OF HUNTINGTON PARK"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "372700007",
+                      "display": "Nitrate-based vasodilating agent"
+                    }
+                  ],
+                  "text": "Nitrate-based vasodilating agent"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/34649cce-7cff-415c-ba39-14b7d4ab8c8b",
+                  "display": "COMMUNITY HOSPITAL OF HUNTINGTON PARK"
+                }
+              }
+            },
+            {
+              "detail": {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "372691009",
+                      "display": "Loop diuretic (substance)"
+                    }
+                  ],
+                  "text": "Loop diuretic (substance)"
+                },
+                "status": "in-progress",
+                "location": {
+                  "reference": "Location/34649cce-7cff-415c-ba39-14b7d4ab8c8b",
+                  "display": "COMMUNITY HOSPITAL OF HUNTINGTON PARK"
+                }
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      }
+    ]
+  }
+]

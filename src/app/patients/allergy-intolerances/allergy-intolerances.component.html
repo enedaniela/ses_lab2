@@ -1,0 +1,29 @@
+<div class = 'table-responsive'>
+    <table class = 'table' *ngIf='allergies && allergies.length'>
+    <thead>
+        <tr>
+            <th>Allergy Id</th>
+            <th>Patient id</th>
+            <th>Cathegory</th>
+            <th>Allergic at</th>
+            <th>Criticality</th>
+            <th>RecDate</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = 'let allergy of allergies'>
+                <td>{{allergy.id}}</td>
+                <td>{{allergy.pacientRef}}</td>
+                <td>{{allergy.cathegory}}</td> 
+                <td>{{allergy.allergicAt}}</td>      
+                <td>{{allergy.criticality}}</td>
+                <td>{{allergy.recDate}}</td>            
+        </tr>
+    </tbody>
+    </table>
+    <div>
+        <label *ngIf = '!allergies.length'>
+        This pacient has no allergies!
+        </label>
+    </div>
+</div>

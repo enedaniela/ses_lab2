@@ -1,0 +1,32 @@
+<div class = 'card'>
+    <div class = 'card-header'>
+        {{pageTitle}}
+    </div>
+    <div class = 'card-body'>
+        <div class = 'row'></div>
+        <div class = 'col-md-6' >
+            <i class="fa fa-filter"></i>
+            Filter by name:   
+            <input type = 'text' [(ngModel)] = 'filter' />
+        </div>
+        <div class = 'table-responsive'>
+            <table class = 'table' *ngIf='filteredMedication && filteredMedication.length'>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = 'let medicine of filteredMedication | paginate: { itemsPerPage: 10, currentPage: p }'>
+                        <td>{{ medicine.id }}</td>
+                        <td>{{ medicine.name }}</td>
+                        <td>{{ medicine.code }}</td>
+                </tr>
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            </tbody>
+            </table>
+        </div>
+    </div>
+</div>

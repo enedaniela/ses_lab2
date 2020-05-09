@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+div.card-header {
+ font-size: large;
+}
+
+div.card {
+  margin-top: 10px
+}
+
+.table {
+  margin-top: 10px
+}
+
+body{
+  color: #004c4c;
+}
+
+input{
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+label{
+  margin-right: 10px
+}
+
+.fa-pencil{
+  color: green
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

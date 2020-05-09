@@ -1,0 +1,703 @@
+[
+    {
+    "resourceType": "Bundle",
+    "id": "d796af6a-dfe2-4ae8-80a5-86a9232759d8",
+    "meta": {
+      "lastUpdated": "2020-04-06T13:56:59.362+00:00"
+    },
+    "type": "searchset",
+    "link": [ {
+      "relation": "self",
+      "url": "http://hapi.fhir.org/baseR4/Medication?_format=json&_pretty=true"
+    }, {
+      "relation": "next",
+      "url": "http://hapi.fhir.org/baseR4?_getpages=d796af6a-dfe2-4ae8-80a5-86a9232759d8&_getpagesoffset=20&_count=20&_format=json&_pretty=true&_bundletype=searchset"
+    } ],
+    "entry": [ {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/1094240",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "1094240",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-04-04T08:02:29.706+00:00",
+          "source": "#d5Bj42QckHDGJ3bt",
+          "tag": [ {
+            "system": "http://www.alpha.alp/use-case",
+            "code": "EX20"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>Amoxicillin 250 MG Oral Capsule</p>\n          </div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "308182",
+            "display": "Amoxicillin 250 MG Oral Capsule"
+          } ],
+          "text": "Amoxicillin 250 MG Oral Capsule"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/1094241",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "1094241",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-04-04T08:02:29.706+00:00",
+          "source": "#d5Bj42QckHDGJ3bt",
+          "tag": [ {
+            "system": "http://www.alpha.alp/use-case",
+            "code": "EX20"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>Erythromycin 250 MG Oral Tablet</p>\n          </div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "598006",
+            "display": "Erythromycin 250 MG Oral Tablet"
+          } ],
+          "text": "Erythromycin 250 MG Oral Tablet"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/921333",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "921333",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T18:07:13.165+00:00",
+          "source": "#tNvVOinXrSHYkvEy"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: med0302</p><p><b>contained</b>: </p><p><b>code</b>: Zosyn (piperacillin/tazobactam) 4.5gm injection <span>(Details : {http://hl7.org/fhir/sid/ndc code '0206-8862-02' = 'n/a', given as 'Zosyn (piperacillin/tazobactam) 4.5gm injection'})</span></p><p><b>manufacturer</b>: id: org7; name: Wyeth Pharmaceuticals Inc</p><p><b>form</b>: Injection solution (qualifier vallue) <span>(Details : {SNOMED CT code '385219001' = 'Injection solution', given as 'Injection solution (qualifier vallue)'})</span></p><blockquote><p><b>ingredient</b></p><p><b>item</b>: Piperacillin Sodium <span>(Details : {RxNorm code '203134' = 'Piperacillin Sodium', given as 'Piperacillin Sodium'})</span></p><p><b>strength</b>: 4 g<span> (Details: UCUM code g = 'g')</span>/20 mL<span> (Details: UCUM code mL = 'mL')</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: Tazobactam Sodium <span>(Details : {RxNorm code '221167' = 'TAZOBACTAM SODIUM', given as 'Tazobactam Sodium'})</span></p><p><b>strength</b>: 0.5 g<span> (Details: UCUM code g = 'g')</span>/20 mL<span> (Details: UCUM code mL = 'mL')</span></p></blockquote></div>"
+        },
+        "contained": [ {
+          "resourceType": "Organization",
+          "id": "org7",
+          "name": "Wyeth Pharmaceuticals Inc"
+        } ],
+        "code": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/sid/ndc",
+            "code": "0206-8862-02",
+            "display": "Zosyn (piperacillin/tazobactam) 4.5gm injection"
+          } ]
+        },
+        "manufacturer": {
+          "reference": "#org7"
+        },
+        "form": {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "385219001",
+            "display": "Injection solution (qualifier vallue)"
+          } ]
+        },
+        "ingredient": [ {
+          "itemCodeableConcept": {
+            "coding": [ {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "203134",
+              "display": "Piperacillin Sodium"
+            } ]
+          },
+          "strength": {
+            "numerator": {
+              "value": 4,
+              "system": "http://unitsofmeasure.org",
+              "code": "g"
+            },
+            "denominator": {
+              "value": 20,
+              "system": "http://unitsofmeasure.org",
+              "code": "mL"
+            }
+          }
+        }, {
+          "itemCodeableConcept": {
+            "coding": [ {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "221167",
+              "display": "Tazobactam Sodium"
+            } ]
+          },
+          "strength": {
+            "numerator": {
+              "value": 0.5,
+              "system": "http://unitsofmeasure.org",
+              "code": "g"
+            },
+            "denominator": {
+              "value": 20,
+              "system": "http://unitsofmeasure.org",
+              "code": "mL"
+            }
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/fd93d683-8d77-49a2-b69e-b32d304916cb",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "fd93d683-8d77-49a2-b69e-b32d304916cb",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T00:42:21.443+00:00",
+          "source": "#FXUTCJdcjGVQogyX",
+          "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" ],
+          "tag": [ {
+            "system": "https://smarthealthit.org/tags",
+            "code": "Covid19 synthetic population from Synthea"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">10 ML Furosemide 10 MG/ML Injection</div></div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1719286",
+            "display": "10 ML Furosemide 10 MG/ML Injection"
+          } ],
+          "text": "10 ML Furosemide 10 MG/ML Injection"
+        },
+        "status": "active"
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/afd0e009-9e18-4057-be59-aa7e153df795",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "afd0e009-9e18-4057-be59-aa7e153df795",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T00:42:21.443+00:00",
+          "source": "#FXUTCJdcjGVQogyX",
+          "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" ],
+          "tag": [ {
+            "system": "https://smarthealthit.org/tags",
+            "code": "Covid19 synthetic population from Synthea"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Nitroglycerin</div></div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "4917",
+            "display": "Nitroglycerin"
+          } ],
+          "text": "Nitroglycerin"
+        },
+        "status": "active"
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/3c50e045-9b4b-4dc3-afe0-d8a03e6d2019",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "3c50e045-9b4b-4dc3-afe0-d8a03e6d2019",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T00:42:21.443+00:00",
+          "source": "#FXUTCJdcjGVQogyX",
+          "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" ],
+          "tag": [ {
+            "system": "https://smarthealthit.org/tags",
+            "code": "Covid19 synthetic population from Synthea"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">24 HR metoprolol succinate 100 MG Extended Release Oral Tablet [Toprol]</div></div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "866414",
+            "display": "24 HR metoprolol succinate 100 MG Extended Release Oral Tablet [Toprol]"
+          } ],
+          "text": "24 HR metoprolol succinate 100 MG Extended Release Oral Tablet [Toprol]"
+        },
+        "status": "active"
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/e0d4cbbe-06e5-4806-9fa6-f5a9b0c53dfe",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "e0d4cbbe-06e5-4806-9fa6-f5a9b0c53dfe",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T00:42:21.443+00:00",
+          "source": "#FXUTCJdcjGVQogyX",
+          "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" ],
+          "tag": [ {
+            "system": "https://smarthealthit.org/tags",
+            "code": "Covid19 synthetic population from Synthea"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Lasix 40mg</div></div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "315971",
+            "display": "Lasix 40mg"
+          } ],
+          "text": "Lasix 40mg"
+        },
+        "status": "active"
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/270a68ec-c206-4d2c-b127-b775030b54e7",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "270a68ec-c206-4d2c-b127-b775030b54e7",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T00:42:08.201+00:00",
+          "source": "#hrIs3uqZcRErzRP4",
+          "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" ],
+          "tag": [ {
+            "system": "https://smarthealthit.org/tags",
+            "code": "Covid19 synthetic population from Synthea"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Amlodipine 5 MG Oral Tablet</div></div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "197361",
+            "display": "Amlodipine 5 MG Oral Tablet"
+          } ],
+          "text": "Amlodipine 5 MG Oral Tablet"
+        },
+        "status": "active"
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/ebd0e665-ed87-4073-92f5-b701b298ba06",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "ebd0e665-ed87-4073-92f5-b701b298ba06",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T00:42:08.201+00:00",
+          "source": "#hrIs3uqZcRErzRP4",
+          "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" ],
+          "tag": [ {
+            "system": "https://smarthealthit.org/tags",
+            "code": "Covid19 synthetic population from Synthea"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Simvastatin 20 MG Oral Tablet</div></div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "312961",
+            "display": "Simvastatin 20 MG Oral Tablet"
+          } ],
+          "text": "Simvastatin 20 MG Oral Tablet"
+        },
+        "status": "active"
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/43947875-5c7e-4dfb-bc64-973b125f375a",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "43947875-5c7e-4dfb-bc64-973b125f375a",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T00:42:08.201+00:00",
+          "source": "#hrIs3uqZcRErzRP4",
+          "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" ],
+          "tag": [ {
+            "system": "https://smarthealthit.org/tags",
+            "code": "Covid19 synthetic population from Synthea"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray</div></div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "705129",
+            "display": "Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray"
+          } ],
+          "text": "Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray"
+        },
+        "status": "active"
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/f5068787-a7cf-4eda-ac86-c9e36d248a8c",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "f5068787-a7cf-4eda-ac86-c9e36d248a8c",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T00:42:08.201+00:00",
+          "source": "#hrIs3uqZcRErzRP4",
+          "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" ],
+          "tag": [ {
+            "system": "https://smarthealthit.org/tags",
+            "code": "Covid19 synthetic population from Synthea"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Clopidogrel 75 MG Oral Tablet</div></div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "309362",
+            "display": "Clopidogrel 75 MG Oral Tablet"
+          } ],
+          "text": "Clopidogrel 75 MG Oral Tablet"
+        },
+        "status": "active"
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/50542c7b-3d7f-4b07-8d23-cfa893112a6a",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "50542c7b-3d7f-4b07-8d23-cfa893112a6a",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T00:41:49.169+00:00",
+          "source": "#mHJIwrseKnPJn7wG",
+          "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" ],
+          "tag": [ {
+            "system": "https://smarthealthit.org/tags",
+            "code": "Covid19 synthetic population from Synthea"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Lasix 40mg</div></div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "315971",
+            "display": "Lasix 40mg"
+          } ],
+          "text": "Lasix 40mg"
+        },
+        "status": "active"
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/e6bbd2f5-d937-4b74-805a-fbe3e5be8a76",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "e6bbd2f5-d937-4b74-805a-fbe3e5be8a76",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T00:41:49.169+00:00",
+          "source": "#mHJIwrseKnPJn7wG",
+          "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" ],
+          "tag": [ {
+            "system": "https://smarthealthit.org/tags",
+            "code": "Covid19 synthetic population from Synthea"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">10 ML Furosemide 10 MG/ML Injection</div></div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1719286",
+            "display": "10 ML Furosemide 10 MG/ML Injection"
+          } ],
+          "text": "10 ML Furosemide 10 MG/ML Injection"
+        },
+        "status": "active"
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/c3d3a893-624c-4130-bce6-f31f9610b9f8",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "c3d3a893-624c-4130-bce6-f31f9610b9f8",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T00:41:49.169+00:00",
+          "source": "#mHJIwrseKnPJn7wG",
+          "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" ],
+          "tag": [ {
+            "system": "https://smarthealthit.org/tags",
+            "code": "Covid19 synthetic population from Synthea"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Nitroglycerin</div></div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "4917",
+            "display": "Nitroglycerin"
+          } ],
+          "text": "Nitroglycerin"
+        },
+        "status": "active"
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/5f75c63b-395c-4a5a-9b08-cfe8739431eb",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "5f75c63b-395c-4a5a-9b08-cfe8739431eb",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T00:41:49.169+00:00",
+          "source": "#mHJIwrseKnPJn7wG",
+          "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" ],
+          "tag": [ {
+            "system": "https://smarthealthit.org/tags",
+            "code": "Covid19 synthetic population from Synthea"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">24 HR metoprolol succinate 100 MG Extended Release Oral Tablet [Toprol]</div></div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "866414",
+            "display": "24 HR metoprolol succinate 100 MG Extended Release Oral Tablet [Toprol]"
+          } ],
+          "text": "24 HR metoprolol succinate 100 MG Extended Release Oral Tablet [Toprol]"
+        },
+        "status": "active"
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/57e7c44a-813d-4433-866e-d0e464b4ebc8",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "57e7c44a-813d-4433-866e-d0e464b4ebc8",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T00:41:33.749+00:00",
+          "source": "#fg08BCbaGuCOMdZo",
+          "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" ],
+          "tag": [ {
+            "system": "https://smarthealthit.org/tags",
+            "code": "Covid19 synthetic population from Synthea"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">24 HR metoprolol succinate 100 MG Extended Release Oral Tablet [Toprol]</div></div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "866414",
+            "display": "24 HR metoprolol succinate 100 MG Extended Release Oral Tablet [Toprol]"
+          } ],
+          "text": "24 HR metoprolol succinate 100 MG Extended Release Oral Tablet [Toprol]"
+        },
+        "status": "active"
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/389e4fbc-0caa-445b-8812-4c412e4bad60",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "389e4fbc-0caa-445b-8812-4c412e4bad60",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T00:41:33.749+00:00",
+          "source": "#fg08BCbaGuCOMdZo",
+          "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" ],
+          "tag": [ {
+            "system": "https://smarthealthit.org/tags",
+            "code": "Covid19 synthetic population from Synthea"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Nitroglycerin</div></div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "4917",
+            "display": "Nitroglycerin"
+          } ],
+          "text": "Nitroglycerin"
+        },
+        "status": "active"
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/78da7681-0d5d-47d4-97eb-b4b02514f196",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "78da7681-0d5d-47d4-97eb-b4b02514f196",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T00:41:33.749+00:00",
+          "source": "#fg08BCbaGuCOMdZo",
+          "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" ],
+          "tag": [ {
+            "system": "https://smarthealthit.org/tags",
+            "code": "Covid19 synthetic population from Synthea"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">10 ML Furosemide 10 MG/ML Injection</div></div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1719286",
+            "display": "10 ML Furosemide 10 MG/ML Injection"
+          } ],
+          "text": "10 ML Furosemide 10 MG/ML Injection"
+        },
+        "status": "active"
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/6140d864-08f1-44d7-b710-a3b81e922090",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "6140d864-08f1-44d7-b710-a3b81e922090",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T00:41:33.749+00:00",
+          "source": "#fg08BCbaGuCOMdZo",
+          "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" ],
+          "tag": [ {
+            "system": "https://smarthealthit.org/tags",
+            "code": "Covid19 synthetic population from Synthea"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Lasix 40mg</div></div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "315971",
+            "display": "Lasix 40mg"
+          } ],
+          "text": "Lasix 40mg"
+        },
+        "status": "active"
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Medication/5b3460bb-7033-49ba-b389-6a63c04d3fc2",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "5b3460bb-7033-49ba-b389-6a63c04d3fc2",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-03-25T00:40:51.324+00:00",
+          "source": "#d16MA6HrplFFN5Jq",
+          "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" ],
+          "tag": [ {
+            "system": "https://smarthealthit.org/tags",
+            "code": "Covid19 synthetic population from Synthea"
+          } ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">10 ML Furosemide 10 MG/ML Injection</div></div>"
+        },
+        "code": {
+          "coding": [ {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1719286",
+            "display": "10 ML Furosemide 10 MG/ML Injection"
+          } ],
+          "text": "10 ML Furosemide 10 MG/ML Injection"
+        },
+        "status": "active"
+      },
+      "search": {
+        "mode": "match"
+      }
+    } ]
+  }
+]
