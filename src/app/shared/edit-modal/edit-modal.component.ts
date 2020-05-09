@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject, Input } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
-import { IPacient } from 'src/app/patients/pacient';
-import { DataService } from 'src/app/services/data.service';
+import { IPacient } from '../../patients/pacient';
+import { DataService } from '../../services/data.service';
 import { PRIMARY_OUTLET, Router } from '@angular/router';
 import { FormGroup, FormBuilder } from '@angular/forms';
 

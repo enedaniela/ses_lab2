@@ -4,7 +4,7 @@ import { PatientService } from '../../services/patient.service';
 import { DataService } from '../../services/data.service';
 import { IPacient } from '../pacient';
 import { analyzeAndValidateNgModules } from '@angular/compiler';
-import { EditModalComponent } from 'src/app/shared/edit-modal/edit-modal.component';
+import { EditModalComponent } from '../../shared/edit-modal/edit-modal.component';
 import { MatDialog } from '@angular/material';
 
 @Component({

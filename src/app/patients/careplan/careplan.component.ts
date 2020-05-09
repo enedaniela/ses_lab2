@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ICarePlan } from './careplan';
 import { Router, PRIMARY_OUTLET } from '@angular/router';
-import { DataService } from 'src/app/services/data.service';
+import { DataService } from '../../services/data.service';
 import { IEncounter } from '../encounters/encounter';
 
 @Component({

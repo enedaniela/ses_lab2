@@ -35,7 +35,7 @@ import { PatientListComponent } from './patients/patient-list/patient-list.compo
     MaterialModule,
     PatientModule,
     RouterModule.forRoot([
-      { path: 'welcome', component: PatientListComponent},
+      { path: 'welcome', component: WelcomeComponent},
       { 
         path: 'patients',
         loadChildren:() => import('./patients/patient.module').then(m => m.PatientModule)
@@ -45,7 +45,7 @@ import { PatientListComponent } from './patients/patient-list/patient-list.compo
         component: MedicationListComponent,
         loadChildren:() => import('./patients/medication/medication.module').then(m => m.MedicationModule)
       },
-      { path: '', redirectTo: 'welcome', pathMatch: 'full'},
+      { path: '', redirectTo: 'patients', pathMatch: 'full'},
       { path: '**', redirectTo: 'welcome', pathMatch: 'full'}
     ]),
     NoopAnimationsModule,
