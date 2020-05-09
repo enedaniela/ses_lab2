@@ -7,22 +7,20 @@ import { RouterModule } from '@angular/router';
 import { PatientModule } from './patients/patient.module';
 import { MedicationModule } from './patients/medication/medication.module';
 import { MedicationListComponent } from './patients/medication/medication-list.component';
-import { EditModalComponent } from './shared/edit-modal/edit-modal.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PatientListComponent } from './patients/patient-list/patient-list.component';
+import 'reflect-metadata';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent,
-    EditModalComponent
+    WelcomeComponent
   ],
   
   entryComponents: [
-    EditModalComponent
   ],
 
   imports: [

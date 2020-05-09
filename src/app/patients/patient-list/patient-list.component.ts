@@ -4,8 +4,6 @@ import { PatientService } from '../../services/patient.service';
 import { DataService } from '../../services/data.service';
 import { IPacient } from '../pacient';
 import { analyzeAndValidateNgModules } from '@angular/compiler';
-import { EditModalComponent } from '../../shared/edit-modal/edit-modal.component';
-import { MatDialog } from '@angular/material';
 
 @Component({
     templateUrl: `./patient-list.component.html`,
@@ -27,7 +25,7 @@ export class PatientListComponent implements OnInit{
     p: number = 1;
 
     
-    constructor(private dataService:DataService, public dialog: MatDialog){
+    constructor(private dataService:DataService){
     }
 
     public get filter(): string {
@@ -49,7 +47,7 @@ export class PatientListComponent implements OnInit{
     ngOnInit(): void {
      this.dataService.getPacientsData().subscribe(
         data => {
-            this.data = data.entry.forEach(p => { 
+            this.data = data[0].entry.forEach(p => { 
                 let pacient: IPacient = {
                     id: (this.isValid(p.resource)) ? (this.isValid(p.resource.id) ? p.resource.id : "") : "",
                     given: (this.isValid(p.resource)) ? (this.isValid(p.resource.name)) ? (this.isValid(p.resource.name[0].given) ? p.resource.name[0].given[0] : "") : "" : "",
@@ -74,29 +72,4 @@ export class PatientListComponent implements OnInit{
         if (field != undefined && field != null) return true;
         return false;
     }
-
-  openDialog(pacientId, pacientFirstName, pacientLastName, pacientGender): void {
-    const dialogRef = this.dialog.open(EditModalComponent, {
-      width: '300px',
-      data: {
-        id: pacientId,
-        firstName: pacientFirstName,
-        lastName: pacientLastName,
-        gender: pacientGender
-      }
-    });
-
-    dialogRef.afterClosed().subscribe(
-        data => {
-            console.log(data);
-            this.pacients.forEach(p=> {
-                if (p.id == data.id){
-                    p.gender = data.gender;
-                    p.given = data.firstName;
-                    p.family = data.lastName;
-                }
-            });
-        }
-    );  
   }
-}

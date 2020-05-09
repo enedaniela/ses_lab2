@@ -4,47 +4,57 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { tap, catchError } from 'rxjs/operators';
 
+@Injectable({
+  providedIn: 'root',
+})
 export class DataService{
-    private pacientsUrl =  './api/patients.json';
-    private medicationUrl = './api/medication.json';
-    private encountersUrl =  './api/encounters.json';
-    private careplanUrl = './api/careplan.json';
-    private appointmentsUrl =  './api/appointments.json';
-    private allergiesUrl = './api/allergy_intolerance.json';
+    private pacientsUrl =  '/assets/patients.json';
+    private medicationUrl = '/assets/medication.json';
+    private encountersUrl =  '/assets/encounters.json';
+    private careplanUrl = '/assets/careplan.json';
+    private appointmentsUrl =  '/assets/appointments.json';
+    private allergiesUrl = '/assets/allergy_intolerance.json';
 
     constructor(private http : HttpClient){}
     getPacientsData() : any{
-        return this.http.get<any[]>(this.pacientsUrl).pipe(
+
+      const post$:Observable<any[]> = this.http.get<any[]>('/assets/patients.json');
+        return post$.pipe(
             catchError(this.handleError)
             );
     }
 
     getMedicationData() : any{
-        return this.http.get<any[]>(this.medicationUrl).pipe(
+            const post$:Observable<any[]> = this.http.get<any[]>('/assets/medication.json');
+        return post$.pipe(
             catchError(this.handleError)
             );
     }
 
     getCareplanData() : any{
-        return this.http.get<any[]>(this.careplanUrl).pipe(
+            const post$:Observable<any[]> = this.http.get<any[]>('/assets/careplan.json');
+        return post$.pipe(
             catchError(this.handleError)
             );
     }
 
     getAllergiesData() : any{
-        return this.http.get<any[]>(this.allergiesUrl).pipe(
+            const post$:Observable<any[]> = this.http.get<any[]>('/assets/allergy_intolerance.json');
+        return post$.pipe(
             catchError(this.handleError)
             );
     }
 
     getEncountersData() : any{
-        return this.http.get<any[]>(this.encountersUrl).pipe(
+        const post$:Observable<any[]> = this.http.get<any[]>('/assets/encounters.json');
+        return post$.pipe(
             catchError(this.handleError)
             );
     }
 
     getAppointmentsData() : any{
-        return this.http.get<any[]>(this.appointmentsUrl).pipe(
+        const post$:Observable<any[]> = this.http.get<any[]>('/assets/appointments.json');
+        return post$.pipe(
             catchError(this.handleError)
             );
     }

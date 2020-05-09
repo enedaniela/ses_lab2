@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { DataService } from './services/data.service';
 import { PatientService } from './services/patient.service';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, MatFormField} from '@angular/material';
 
 @Component({
   selector: 'pm-root',
