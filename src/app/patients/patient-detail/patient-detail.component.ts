@@ -28,7 +28,7 @@ export class PatientDetailComponent implements OnInit {
         this.id = this.route.snapshot.paramMap.get('id');
         this.dataService.getPacientsData().subscribe(
             data => {
-                this.data = data[].entry.forEach(p => { 
+                this.data = data[0].entry.forEach(p => { 
                     let pacient: IPacient = {
                         id: (this.isValid(p.resource)) ? (this.isValid(p.resource.id) ? p.resource.id : "") : "",
                         given: (this.isValid(p.resource)) ? (this.isValid(p.resource.name)) ? (this.isValid(p.resource.name[0].given) ? p.resource.name[0].given[0] : "") : "" : "",
